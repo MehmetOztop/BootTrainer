@@ -1,0 +1,24 @@
+CLASS LHC_CONNECTIONS DEFINITION INHERITING FROM CL_ABAP_BEHAVIOR_HANDLER.
+  PRIVATE SECTION.
+    METHODS:
+      GET_GLOBAL_AUTHORIZATIONS FOR GLOBAL AUTHORIZATION
+        IMPORTING
+           REQUEST requested_authorizations FOR Connections
+        RESULT result,
+         ValidateCity FOR VALIDATE ON SAVE
+            IMPORTING keys FOR Connections~ValidateCity.
+
+          METHODS ValidateSemanticKeys FOR VALIDATE ON SAVE
+            IMPORTING keys FOR Connections~ValidateSemanticKeys.
+ENDCLASS.
+
+CLASS LHC_CONNECTIONS IMPLEMENTATION.
+  METHOD GET_GLOBAL_AUTHORIZATIONS.
+  ENDMETHOD.
+  METHOD ValidateCity.
+  ENDMETHOD.
+
+  METHOD ValidateSemanticKeys.
+  ENDMETHOD.
+
+ENDCLASS.
